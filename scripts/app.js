@@ -1,9 +1,9 @@
 (function(){
   'use strict';
-  angular.module('LunchApp', [])
-  .controller('LunchController', LunchController);
+  angular.module("LunchApp", [])
+  .controller("LunchController", LunchController);
 
-  LunchController.$inject = ['$scope'];
+  LunchController.$inject = ["$scope"];
   function LunchController($scope){
     $scope.message = "";
     $scope.dishes = "";
@@ -22,8 +22,8 @@
         }
       }
       else {
-        $scope.message = "Please enter data first";
-        $scope.statusClass = 'alert-error';
+        $scope.message = "Please enter data firstt";
+        $scope.statusClass = 'alert-danger';
       }
     };
   }
